@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Housing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏠 Rental Housing</h1>
+    <input type="text" id="search" placeholder="Search by city..." onkeyup="searchHouse()">
+</header>
+
+<section class="container" id="houseList">
+
+    <div class="card" data-city="bhopal">
+        <h3>2BHK Apartment</h3>
+        <p>📍 Bhopal</p>
+        <p>💰 ₹10,000/month</p>
+        <button onclick="bookHouse('2BHK Apartment')">Book Now</button>
+    </div>
+
+    <div class="card" data-city="indore">
+        <h3>1BHK Flat</h3>
+        <p>📍 Indore</p>
+        <p>💰 ₹7,000/month</p>
+        <button onclick="bookHouse('1BHK Flat')">Book Now</button>
+    </div>
+
+    <div class="card" data-city="delhi">
+        <h3>3BHK Villa</h3>
+        <p>📍 Delhi</p>
+        <p>💰 ₹25,000/month</p>
+        <button onclick="bookHouse('3BHK Villa')">Book Now</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
